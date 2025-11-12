@@ -1,0 +1,13 @@
+Phase 1 — Initialize Sequelize & DB
+
+Install sequelize-cli globally or use npx (we used npx).
+
+Initialize folders (if needed):
+
+npx sequelize-cli init
+
+Above command was using this command "npx sequelize"
+
+if your installed the sequelize in globally no isssues.
+
+

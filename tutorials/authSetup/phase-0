@@ -1,0 +1,42 @@
+Basic Setup
+
+1.Create project folder & init
+
+mkdir ecommerce-backend
+cd ecommerce-backend
+git init
+npm init -y
+
+2.Install core packages
+
+npm i express dotenv bcrypt jsonwebtoken pg pg-hstore sequelize sequelize-cli multer cors helmet joi
+# dev
+npm i -D nodemon eslint prettier
+
+3.Quick useful package.json scripts (edit)
+
+"scripts": {
+  "dev": "nodemon src/server.js",
+  "start": "node src/server.js",
+  "migrate": "npx sequelize-cli db:migrate",
+  "migrate:undo": "npx sequelize-cli db:migrate:undo",
+  "migrate:undo:all": "npx sequelize-cli db:migrate:undo:all"
+}
+
+4.Create project layout
+
+ecommerce-backend/
+├─ src/
+│  ├─ controllers/
+│  ├─ models/
+│  ├─ migrations/
+│  ├─ seeders/
+│  ├─ routes/
+│  ├─ middleware/
+│  ├─ services/
+│  ├─ utils/
+│  └─ server.js
+├─ config/
+│  └─ config.js (sequelize)
+├─ .sequelizerc
+├─ .env

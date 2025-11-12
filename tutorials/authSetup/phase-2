@@ -1,0 +1,13 @@
+Phase 2 — Create User module (auth + migrations + model)
+
+Generate migration
+
+npx sequelize-cli migration:generate --name create-users-table
+
+Create model
+
+npx sequelize-cli model:generate --name User --attributes name:string,email:string,password:string,phone:string,role:string
+
+Run migrations:
+
+npx sequelize-cli db:migrate
