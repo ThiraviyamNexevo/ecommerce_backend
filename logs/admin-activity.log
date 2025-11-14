@@ -1,0 +1,9 @@
+{"timestamp":"2025-11-12T13:52:53.801Z","action":"Created category","details":{"name":"Equipments"}}
+{"timestamp":"2025-11-13T11:07:43.088Z","action":"Created category","details":{"name":"Bottles"}}
+{"timestamp":"2025-11-13T11:13:15.203Z","action":"Created subcategory","details":{"name":"Laptops","categoryId":1}}
+{"timestamp":"2025-11-13T11:13:38.702Z","action":"Created subcategory","details":{"name":"Headphones","categoryId":1}}
+{"timestamp":"2025-11-13T11:13:46.163Z","action":"Created subcategory","details":{"name":"Speakers","categoryId":1}}
+{"timestamp":"2025-11-13T11:13:52.012Z","action":"Created subcategory","details":{"name":"Mobiles","categoryId":1}}
+{"timestamp":"2025-11-13T11:54:38.436Z","action":"Created product","details":{"name":"Samsung"}}
+{"timestamp":"2025-11-13T11:55:36.520Z","action":"Created product","details":{"name":"DELL"}}
+{"timestamp":"2025-11-13T11:55:58.995Z","action":"Created product","details":{"name":"HP - Laptop"}}
