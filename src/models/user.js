@@ -9,6 +9,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      User.hasMany(models.UserAddress, {
+        foreignKey: "userId",
+        as: "addresses",
+      });
     }
   }
   User.init(
@@ -17,7 +21,10 @@ module.exports = (sequelize, DataTypes) => {
       email: DataTypes.STRING,
       password: DataTypes.STRING,
       phone: DataTypes.STRING,
-      role: DataTypes.STRING,
+      role: {
+        type: DataTypes.ENUM("user", "admin"),
+        defaultValue: "user",
+      },
     },
     {
       sequelize,
