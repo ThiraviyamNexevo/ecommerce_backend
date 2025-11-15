@@ -17,6 +17,12 @@ app.use("/api/admin/subcategory", require("./routes/subcategory"));
 app.use("/api/admin/product", require("./routes/product"));
 app.use("/api/cart", require("./routes/cart"));
 app.use("/api/order", require("./routes/order"));
+app.use("/api/payment", require("./routes/payment"));
+app.use("/api/wishlist", require("./routes/wishlist"));
+app.use("/api/search", require("./routes/search"));
+app.use("/api/review", require("./routes/review"));
+app.use("/api/inventory", require("./routes/inventory"));
+
 
 
 // ✅ Global error handler (must be last)
